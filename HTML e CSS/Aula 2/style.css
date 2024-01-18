@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  background: #000;
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 82px;
+}
+
+.text-container {
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+.text-container-title {
+  font-family: 'Krona One';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  color: #f6f6f6;
+}
+.text-container-title strong {
+  color: #f2dd6e;
+}
+
+.text-container-paragraph {
+  color: #f6f6f6;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.text-container-links {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.text-container-link {
+  width: 280px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 0px solid #f2dd6e;
+  background: #f2dd6e;
+
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.text-container-link:hover {
+  background: #e5b25d;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 470px;
+  height: 470px;
+  object-fit: cover;
+
+  border-radius: 16px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.image-container::before {
+  position: absolute;
+  top: -13px;
+  right: -15px;
+
+  content: '';
+  border: 3px solid #f2dd6e;
+  width: 450px;
+  height: 450px;
+  border-radius: 16px;
+}
