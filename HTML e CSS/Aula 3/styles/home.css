@@ -1,0 +1,111 @@
+.main__container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 80px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 82px;
+}
+
+.text__section {
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.text__section__title {
+  font-family: 'Krona One';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  color: var(--white);
+}
+.text__section__title strong {
+  color: var(--primary-color);
+}
+
+.text__section__paragraph {
+  color: var(--white);
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.text__section__links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.text__section__subtitle {
+  color: var(--white);
+}
+
+.text__section__link {
+  width: 378px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+
+  transition: all 0.3s;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 16px;
+}
+.text__section__link:hover {
+  background: var(--zinc-color);
+}
+
+.image__container {
+  position: relative;
+}
+
+.image__container img {
+  width: 470px;
+  height: 470px;
+  object-fit: cover;
+
+  border-radius: 16px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.image__container::before {
+  position: absolute;
+  top: -13px;
+  right: -15px;
+
+  content: '';
+  border: 3px solid var(--primary-color);
+  width: 450px;
+  height: 450px;
+  border-radius: 16px;
+}
